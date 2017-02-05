@@ -9,7 +9,7 @@ img{
 	width: 90%;
 	margin: 10px auto;
 }
-/********NAVIGATION STYLING*********/
+/*********NAVIGATION STYLING*********/
 .iso-nav{
 	text-align: center;
 }
@@ -30,7 +30,7 @@ ul li:hover{
 	background: #5274a9;
 	color: #fff;
 }
-/*******MAIN PORTFOLIO STYLING*******/
+/*********MAIN PORTFOLIO STYLING*********/
 .main-iso{
 	width: 100%;
 }
@@ -39,6 +39,9 @@ ul li:hover{
 	height: 255px;
 	float: left;
 	display: inline-block;
+}
+.main{
+	margin-bottom: 20px;
 }
 .active{
 	background: #5274a9;
@@ -50,12 +53,12 @@ ul li:hover{
 }
 .jumbotron{
 	text-align: center;
-	font-family: helvecta;
-	background-color: gray;
+	font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+	background-color: #262524;
 	color: #4FB;
-	border-radius: 10px;
+	border-radius: 5px;
 }
-sss
+
 
 
 

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<script type="text/javascript">
+
+function getPrime(n){
+  var prime = []; //We will stash all our prime numbers here.
+  prime.push(2); //start with 2 as it's the first prime number
+  prime.push(3)
+  prime.push(5)
+  prime.push(7)
+  prime.push(11)
+  prime.push(13)
+
+
+  console.log(prime);
+  var i = 17; //start checking prime at 3
+  while(prime.length < n){ //Keep going until we have pushed n prime numbers on (= nth prime)
+    var isPrime = true; //Assume the number is prime until we find otherwise
+  	for(var j = 0; j < prime.length; j++){//Divide the current number by every known prime.
+  	  var iByJ = i % prime[j];
+  		if(iByJ == 0){
+  		  //this thing is not prime. We know, because it divded evenly into something
+        isPrime = false; //update the boolean
+        break; //dont waste any time looking for more. its not prime. leave the loop.
+  	  }
+  	}
+  	if(isPrime){
+  	  prime.push(i);
+  	}
+  	i++;
+  }
+  // console.log(prime);
+  return i;
+}
+
+console.time('getPrime');
+console.log(getPrime(10001));
+console.endTime('getPrime');
+
+</script>
+</body>
+</html>
