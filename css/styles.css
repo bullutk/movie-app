@@ -39,6 +39,7 @@ ul li:hover{
 	height: 255px;
 	float: left;
 	display: inline-block;
+	margin-bottom: 5px;
 }
 .main{
 	margin-bottom: 20px;
